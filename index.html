@@ -1,14 +1,14 @@
 <!-- Final Project
 Requirements
-[  ] Customized HTML Page #1
-[  ] Customized HTML Page #2 
-[  ] Customized HTML Page #3
-[  ] Customized HTML Page #4
+[ yes ] Customized HTML Page #1
+[ yes ] Customized HTML Page #2 
+[ yes ] Customized HTML Page #3
+[ yes ] Customized HTML Page #4
 
 Select ONE Additional Feature to Add  
 [ no ] Feature 1 - Google Font
 [ no ] Feature 2 - Upload a Font
-[ no ] Feature 3 - Include jQuery
+[ yes ] Feature 3 - Include jQuery
 [ no ] Feature 4 - Embed Code from Spotify/Google Docs/YouTube
 [ no ] Feature 5 - Customized HTML Page #5
 -->
@@ -25,7 +25,7 @@ Select ONE Additional Feature to Add
       https://www.w3schools.com/howto/howto_css_parallax.asp*/
       .parallax {
         /* The image used */
-        background-image: url("https://cdn.glitch.global/66249578-345e-4e9c-8fac-cabe98f682e4/image0.jpeg?v=1747657278943");
+        background-image: url("");
 
         /* Set a specific height */
         min-height: 500px;
@@ -38,22 +38,31 @@ Select ONE Additional Feature to Add
       }
       .textblock {
         min-height: 500px;
-        background-color: black;
-        color: white;
+        background: rgb(95, 139, 76);
+        color: rgb(95, 139, 76);
       }
       .parent-flex {
         display: flex;
       }
       .child-flex {
-        background-color: green;
+        background: rgb(255, 154, 154);
         margin: 30px;
         padding: 10px;
         text-align: justify;
-        width: 40%;
+        width: 90%;
       }
-      .para-1{
+      .para-1 {
         display: flex;
         align-items: center;
+      }
+      h1 {
+        color: rgb(255, 154, 154);
+        margin: 20px;
+      }
+
+      body {
+        background-image: url("https://cdn.glitch.global/98c9ecf5-68b0-4984-a92a-632e9a695059/unnamed%20(12).jpg?v=1748911632784");
+        background-size: 1530px;
       }
     </style>
   </head>
@@ -63,49 +72,31 @@ Select ONE Additional Feature to Add
       <li><a class="active" href="index.html">Home</a></li>
       <li><a href="aboutme.html">About Me</a></li>
       <li><a href="art.html">Art</a></li>
-      <li><a href="resume.html">Resume</a></li>
-      <li style="float: right">
-        <a target="_blank" href=""
-          ><img
-            src="https://www.getfocused.no/wp-content/uploads/2022/09/White-YouTube-Logo-Transparent.png"
-            style="width: 25px; margin: -5px"
-        /></a>
-      </li>
-      <li style="float: right">
-        <a target="_blank" href=""
-          ><img
-            src="https://img.icons8.com/win10/512/FFFFFF/instagram-new.png"
-            style="width: 25px; margin: -5px"
-        /></a>
-      </li>
+      <li><a href="resume.html">Art</a></li>
+      <li style="float: right"></li>
     </ul>
 
     <!-- ⬇⬇⬇⬇⬇⬇ Main Page Content -->
-    <h1>Ms. Hall | Web Dev 2024-2025</h1>
+    <h1>Isabel Bottjer | Art</h1>
     <div class="parallax"></div>
 
     <div class="textblock parent-flex">
-      <div class="child-flex para-1">
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque
-          faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi
-          pretium tellus duis convallis. Tempus leo eu aenean sed diam urna
-          tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas.
-          Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut
-          hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent
-          per conubia nostra inceptos himenaeos.
-        </p>
-      </div>
       <div class="child-flex">
         <p>
-          Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque
-          faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi
-          pretium tellus duis convallis. Tempus leo eu aenean sed diam urna
-          tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas.
-          Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut
-          hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent
-          per conubia nostra inceptos himenaeos.
+          Welcome to my Art page! These are some art pieces i've worked on
+          throughout these past years.
         </p>
+        <img
+          id="bottom-pic"
+          src="https://static-00.iconduck.com/assets.00/waving-hand-emoji-512x505-s43lrnnl.png"
+          width="130"
+        />
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+        <script>
+          var $pic = $("#bottom-pic");
+          $pic.hide();
+          $("#bottom-pic").slideDown(6000);
+        </script>
       </div>
     </div>
   </body>

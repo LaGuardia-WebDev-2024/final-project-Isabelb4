@@ -6,22 +6,40 @@
     <link href="style.css" rel="stylesheet" type="text/css" />
     <style>
       /* Styling Only Related To THIS Page */
+
       .parent-flex {
         display: flex;
-        background-color: purple;
+        background: rgb(148, 80, 52);
         align-items: center;
         justify-content: space-around;
         margin-bottom: 50px;
       }
 
       .parent-flex img {
-        width: 150px;
-        padding: 20px;
+        width: 180px;
+        padding: 0px;
+        margin: 20px;
       }
       .child-flex p {
-        background-color: pink;
+        background: rgb(255, 221, 171);
         padding: 20px;
         margin: 20px;
+      }
+      img {
+        border: 8px solid #ff9a9a;
+      }
+      p {
+        border: 8px solid #ff9a9a;
+        color: rgb(95, 139, 76);
+      }
+
+      h1 {
+        color: rgb(255, 154, 154);
+        margin: 20px;
+      }
+
+      body {
+        background-image: url("https://www.colorhexa.com/5a8b4c.png");
       }
     </style>
   </head>
@@ -31,21 +49,9 @@
       <li><a href="index.html">Home</a></li>
       <li><a class="active" href="aboutme.html">About Me</a></li>
       <li><a href="art.html">Art</a></li>
-      <li><a href="resume.html">Resume</a></li>
-      <li style="float: right">
-        <a target="_blank" href=""
-          ><img
-            src="https://www.getfocused.no/wp-content/uploads/2022/09/White-YouTube-Logo-Transparent.png"
-            style="width: 25px; margin: -5px"
-        /></a>
-      </li>
-      <li style="float: right">
-        <a target="_blank" href=""
-          ><img
-            src="https://img.icons8.com/win10/512/FFFFFF/instagram-new.png"
-            style="width: 25px; margin: -5px"
-        /></a>
-      </li>
+      <li><a href="resume.html">Art</a></li>
+      <li style="float: right"></li>
+      <li style="float: right"></li>
     </ul>
 
     <!-- ⬇⬇⬇⬇⬇⬇ Main Page Content -->
@@ -53,37 +59,14 @@
     <div class="parent-flex">
       <div class="child-flex">
         <img
-          src="https://cdn.glitch.global/0c264bf4-23f0-42f0-ac26-96d6871eec31/Untitled100.png?v=1746635377571"
+          src="https://cdn.glitch.global/98c9ecf5-68b0-4984-a92a-632e9a695059/unnamed%20(7).jpg?v=1748045296716"
         />
       </div>
       <div class="child-flex">
         <p>
-          Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque
-          faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi
-          pretium tellus duis convallis. Tempus leo eu aenean sed diam urna
-          tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas.
-          Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut
-          hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent
-          per conubia nostra inceptos himenaeos.
+          Hi, I'm Isabel Bottjer, a junior at LaGuardia High School majoring in
+          art.
         </p>
-      </div>
-    </div>
-    <div class="parent-flex">
-      <div class="child-flex">
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque
-          faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi
-          pretium tellus duis convallis. Tempus leo eu aenean sed diam urna
-          tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas.
-          Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut
-          hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent
-          per conubia nostra inceptos himenaeos.
-        </p>
-      </div>
-      <div class="child-flex">
-        <img
-          src="https://cdn.glitch.global/0c264bf4-23f0-42f0-ac26-96d6871eec31/Untitled100.png?v=1746635377571"
-        />
       </div>
     </div>
   </body>

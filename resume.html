@@ -6,6 +6,61 @@
     <link href="style.css" rel="stylesheet" type="text/css" />
     <style>
       /* Styling Only Related To THIS Page */
+
+      body {
+        background-image: url("https://www.colorhexa.com/5a8b4c.png");
+      }
+
+      .h1 {
+        color: rgb(255, 154, 154);
+        margin: 20px;
+
+        .main {
+          display: flex;
+          justify-content: space-around;
+          flex-wrap: wrap;
+        }
+
+        .flip-card {
+          background-color: transparent;
+          width: 350px;
+          height: 270px;
+          border: 1px solid #f1f1f1;
+        }
+
+        .flip-card-inner {
+          position: relative;
+          width: 100%;
+          height: 100%;
+          text-align: center;
+          transition: transform 0.8s;
+          transform-style: preserve-3d;
+        }
+
+        .flip-card:hover .flip-card-inner {
+          transform: rotateY(180deg);
+        }
+
+        .flip-card-front,
+        .flip-card-back {
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          backface-visibility: hidden;
+          backface-visibility: hidden;
+        }
+
+        .flip-card-front {
+          background-color: #bbb;
+          color: black;
+        }
+
+        .flip-card-back {
+          background: rgb(255, 154, 154);
+          color: white;
+          transform: rotateY(180deg);
+        }
+      }
     </style>
   </head>
   <body>
@@ -14,24 +69,31 @@
       <li><a href="index.html">Home</a></li>
       <li><a href="aboutme.html">About Me</a></li>
       <li><a href="art.html">Art</a></li>
-      <li><a class="active" href="resume.html">Resume</a></li>
-      <li style="float: right">
-        <a target="_blank" href=""
-          ><img
-            src="https://www.getfocused.no/wp-content/uploads/2022/09/White-YouTube-Logo-Transparent.png"
-            style="width: 25px; margin: -5px"
-        /></a>
-      </li>
-      <li style="float: right">
-        <a target="_blank" href=""
-          ><img
-            src="https://img.icons8.com/win10/512/FFFFFF/instagram-new.png"
-            style="width: 25px; margin: -5px"
-        /></a>
-      </li>
+      <li><a class="active" href="resume.html">Art</a></li>
+      <li style="float: right"></li>
+      <li style="float: right"></li>
     </ul>
     <!-- ⬇⬇⬇⬇⬇⬇ Main Page Content -->
-    <h1>Resume</h1>
+    <h1 class="h1">My Art</h1>
 
+    <div class="main">
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img
+              src=""
+              alt="Avatar"
+              style="width: 350px; height: 270px"
+            />
+          </div>
+          <div class="flip-card-back">
+            <h1></h1>
+            <p>Medium: </p>
+            <p>Year: </p>
+            <p>Size: </p>
+          </div>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
