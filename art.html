@@ -6,17 +6,460 @@
     <link href="style.css" rel="stylesheet" type="text/css" />
     <style>
       /* Styling Only Related To THIS Page */
-      .parent-flex {
-        display: flex;
-        background-color: purple;
-        justify-content: space-around;
-        padding: 10px;
-        margin-bottom: 20px;
+
+      .h1 {
+        color: rgb(255, 154, 154);
+        margin: 20px;
       }
 
-      .parent-flex img {
-        max-width: 30%;
-        border-radius: 10px;
+      body {
+        background-image: url("https://www.colorhexa.com/5a8b4c.png");
+      }
+
+      .main {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+      }
+
+      .flip-card {
+        background-color: transparent;
+        width: 350px;
+        height: 270px;
+        border: 1px solid #f1f1f1;
+      }
+
+      .flip-card-inner {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        transition: transform 0.8s;
+        transform-style: preserve-3d;
+      }
+
+      .flip-card:hover .flip-card-inner {
+        transform: rotateY(180deg);
+      }
+
+      .flip-card-front,
+      .flip-card-back {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        backface-visibility: hidden;
+        backface-visibility: hidden;
+      }
+
+      .flip-card-front {
+        background-color: #bbb;
+        color: black;
+      }
+
+      .flip-card-back {
+        background: rgb(255, 154, 154);
+        color: white;
+        transform: rotateY(180deg);
+      }
+
+      .flip-card2 {
+        background-color: transparent;
+        width: 350px;
+        height: 300px;
+        border: 1px solid #f1f1f1;
+      }
+
+      .flip-card-inner2 {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        transition: transform 0.8s;
+        transform-style: preserve-3d;
+      }
+
+      .flip-card2:hover .flip-card-inner2 {
+        transform: rotateY(180deg);
+      }
+
+      .flip-card-front2,
+      .flip-card-back2 {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        backface-visibility: hidden;
+        backface-visibility: hidden;
+      }
+
+      .flip-card-front2 {
+        background-color: #bbb;
+        color: black;
+      }
+
+      .flip-card-back2 {
+        background: rgb(255, 154, 154);
+        color: white;
+        transform: rotateY(180deg);
+      }
+
+      .flip-card3 {
+        background-color: transparent;
+        width: 250px;
+        height: 310px;
+        border: 1px solid #f1f1f1;
+      }
+
+      .flip-card-inner3 {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        transition: transform 0.8s;
+        transform-style: preserve-3d;
+      }
+
+      .flip-card3:hover .flip-card-inner3 {
+        transform: rotateY(180deg);
+      }
+
+      .flip-card-front3,
+      .flip-card-back3 {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        backface-visibility: hidden;
+        backface-visibility: hidden;
+      }
+
+      .flip-card-front3 {
+        background-color: #bbb;
+        color: black;
+      }
+
+      .flip-card-back3 {
+        background: rgb(255, 154, 154);
+        color: white;
+        transform: rotateY(180deg);
+      }
+
+      .flip-card4 {
+        background-color: transparent;
+        width: 350px;
+        height: 260px;
+        border: 1px solid #f1f1f1;
+      }
+
+      .flip-card-inner4 {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        transition: transform 0.8s;
+        transform-style: preserve-3d;
+      }
+
+      .flip-card4:hover .flip-card-inner4 {
+        transform: rotateY(180deg);
+      }
+
+      .flip-card-front4,
+      .flip-card-back4 {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        backface-visibility: hidden;
+        backface-visibility: hidden;
+      }
+
+      .flip-card-front4 {
+        background-color: #bbb;
+        color: black;
+      }
+
+      .flip-card-back4 {
+        background: rgb(255, 154, 154);
+        color: white;
+        transform: rotateY(180deg);
+      }
+
+      .flip-card5 {
+        background-color: transparent;
+        width: 250px;
+        height: 310px;
+        border: 1px solid #f1f1f1;
+      }
+
+      .flip-card-inner5 {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        transition: transform 0.8s;
+        transform-style: preserve-3d;
+      }
+
+      .flip-card5:hover .flip-card-inner5 {
+        transform: rotateY(180deg);
+      }
+
+      .flip-card-front5,
+      .flip-card-back5 {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        backface-visibility: hidden;
+        backface-visibility: hidden;
+      }
+
+      .flip-card-front5 {
+        background-color: #bbb;
+        color: black;
+      }
+
+      .flip-card-back5 {
+        background: rgb(255, 154, 154);
+        color: white;
+        transform: rotateY(180deg);
+      }
+
+      .flip-card6 {
+        background-color: transparent;
+        width: 240px;
+        height: 310px;
+        border: 1px solid #f1f1f1;
+      }
+
+      .flip-card-inner6 {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        transition: transform 0.8s;
+        transform-style: preserve-3d;
+      }
+
+      .flip-card6:hover .flip-card-inner6 {
+        transform: rotateY(180deg);
+      }
+
+      .flip-card-front6,
+      .flip-card-back6 {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        backface-visibility: hidden;
+        backface-visibility: hidden;
+      }
+
+      .flip-card-front6 {
+        background-color: #bbb;
+        color: black;
+      }
+
+      .flip-card-back6 {
+        background: rgb(255, 154, 154);
+        color: white;
+        transform: rotateY(180deg);
+      }
+
+      .flip-card7 {
+        background-color: transparent;
+        width: 340px;
+        height: 240px;
+        border: 1px solid #f1f1f1;
+      }
+
+      .flip-card-inner7 {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        transition: transform 0.8s;
+        transform-style: preserve-3d;
+      }
+
+      .flip-card7:hover .flip-card-inner7 {
+        transform: rotateY(180deg);
+      }
+
+      .flip-card-front7,
+      .flip-card-back7 {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        backface-visibility: hidden;
+        backface-visibility: hidden;
+      }
+
+      .flip-card-front7 {
+        background-color: #bbb;
+        color: black;
+      }
+
+      .flip-card-back7 {
+        background: rgb(255, 154, 154);
+        color: white;
+        transform: rotateY(180deg);
+      }
+
+      .flip-card8 {
+        background-color: transparent;
+        width: 200px;
+        height: 300px;
+        border: 1px solid #f1f1f1;
+      }
+
+      .flip-card-inner8 {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        transition: transform 0.8s;
+        transform-style: preserve-3d;
+      }
+
+      .flip-card8:hover .flip-card-inner8 {
+        transform: rotateY(180deg);
+      }
+
+      .flip-card-front8,
+      .flip-card-back8 {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        backface-visibility: hidden;
+        backface-visibility: hidden;
+      }
+
+      .flip-card-front8 {
+        background-color: #bbb;
+        color: black;
+      }
+
+      .flip-card-back8 {
+        background: rgb(255, 154, 154);
+        color: white;
+        transform: rotateY(180deg);
+      }
+
+      .flip-card9 {
+        background-color: transparent;
+        width: 210px;
+        height: 300px;
+        border: 1px solid #f1f1f1;
+      }
+
+      .flip-card-inner9 {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        transition: transform 0.8s;
+        transform-style: preserve-3d;
+      }
+
+      .flip-card9:hover .flip-card-inner9 {
+        transform: rotateY(180deg);
+      }
+
+      .flip-card-front9,
+      .flip-card-back9 {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        backface-visibility: hidden;
+        backface-visibility: hidden;
+      }
+
+      .flip-card-front9 {
+        background-color: #bbb;
+        color: black;
+      }
+
+      .flip-card-back9 {
+        background: rgb(255, 154, 154);
+        color: white;
+        transform: rotateY(180deg);
+      }
+
+      .flip-card10 {
+        background-color: transparent;
+        width: 220px;
+        height: 300px;
+        border: 1px solid #f1f1f1;
+      }
+
+      .flip-card-inner10 {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        transition: transform 0.8s;
+        transform-style: preserve-3d;
+      }
+
+      .flip-card10:hover .flip-card-inner10 {
+        transform: rotateY(180deg);
+      }
+
+      .flip-card-front10,
+      .flip-card-back10 {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        backface-visibility: hidden;
+        backface-visibility: hidden;
+      }
+
+      .flip-card-front10 {
+        background-color: #bbb;
+        color: black;
+      }
+
+      .flip-card-back10 {
+        background: rgb(255, 154, 154);
+        color: white;
+        transform: rotateY(180deg);
+      }
+
+      .flip-card11 {
+        background-color: transparent;
+        width: 250px;
+        height: 300px;
+        border: 1px solid #f1f1f1;
+      }
+
+      .flip-card-inner11 {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        transition: transform 0.8s;
+        transform-style: preserve-3d;
+      }
+
+      .flip-card11:hover .flip-card-inner11 {
+        transform: rotateY(180deg);
+      }
+
+      .flip-card-front11,
+      .flip-card-back11 {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        backface-visibility: hidden;
+        backface-visibility: hidden;
+      }
+
+      .flip-card-front11 {
+        background-color: #bbb;
+        color: black;
+      }
+
+      .flip-card-back11 {
+        background: rgb(255, 154, 154);
+        color: white;
+        transform: rotateY(180deg);
       }
     </style>
   </head>
@@ -26,41 +469,228 @@
       <li><a href="index.html">Home</a></li>
       <li><a href="aboutme.html">About Me</a></li>
       <li><a class="active" href="art.html">Art</a></li>
-      <li><a href="resume.html">Resume</a></li>
-      <li style="float: right">
-        <a target="_blank" href=""
-          ><img
-            src="https://www.getfocused.no/wp-content/uploads/2022/09/White-YouTube-Logo-Transparent.png"
-            style="width: 25px; margin: -5px"
-        /></a>
-      </li>
-      <li style="float: right">
-        <a target="_blank" href=""
-          ><img
-            src="https://img.icons8.com/win10/512/FFFFFF/instagram-new.png"
-            style="width: 25px; margin: -5px"
-        /></a>
-      </li>
+      <li><a href="resume.html">Art</a></li>
+      <li style="float: right"></li>
     </ul>
     <!-- ⬇⬇⬇⬇⬇⬇ Main Page Content -->
-    <h1>My Art</h1>
+    <h1 class="h1">My Art</h1>
 
-    <div class="parent-flex">
-      <img
-        src="https://cdn.glitch.global/0c264bf4-23f0-42f0-ac26-96d6871eec31/Untitled100.png?v=1746635377571"
-      />
-      <img
-        src="https://cdn.glitch.global/0c264bf4-23f0-42f0-ac26-96d6871eec31/IMG_3767.png?v=1746635392409"
-      />
-    </div>
+    <div class="main">
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img
+              src="https://cdn.glitch.global/98c9ecf5-68b0-4984-a92a-632e9a695059/thumbnails%2FIMG_3653.jpg?1748044358258"
+              alt="Avatar"
+              style="width: 350px; height: 270px"
+            />
+          </div>
+          <div class="flip-card-back">
+            <h1>Grandma's Garden</h1>
+            <p>Medium: Acrylic Paint</p>
+            <p>Year: 2025</p>
+            <p>Size: 18 x 24</p>
+          </div>
+        </div>
+      </div>
 
-    <div class="parent-flex">
-      <img
-        src="https://cdn.glitch.global/0c264bf4-23f0-42f0-ac26-96d6871eec31/Untitled100.png?v=1746635377571"
-      />
-      <img
-        src="https://cdn.glitch.global/0c264bf4-23f0-42f0-ac26-96d6871eec31/IMG_3767.png?v=1746635392409"
-      />
+      <div class="main2">
+        <div class="flip-card2">
+          <div class="flip-card-inner2">
+            <div class="flip-card-front2">
+              <img
+                src="https://cdn.glitch.global/98c9ecf5-68b0-4984-a92a-632e9a695059/unnamed%20(8).jpg?v=1748045868103"
+                alt="Avatar2"
+                style="width: 350px; height: 300px"
+              />
+            </div>
+            <div class="flip-card-back2">
+              <h1>Tosca in the river</h1>
+              <p>Medium: Acrylic Paint</p>
+              <p>Year: 2025</p>
+              <p>Size: 30 x 24</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="main3">
+        <div class="flip-card3">
+          <div class="flip-card-inner3">
+            <div class="flip-card-front3">
+              <img
+                src="https://cdn.glitch.global/98c9ecf5-68b0-4984-a92a-632e9a695059/unnamed%20(9).jpg?v=1748481844491"
+                alt="Avatar3"
+                style="width: 250px; height: 310px"
+              />
+            </div>
+            <div class="flip-card-back3">
+              <h1>Open Window</h1>
+              <p>Medium: Acrylic Paint</p>
+              <p>Year: 2024</p>
+              <p>Size: 18 x 14</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="main4">
+        <div class="flip-card4">
+          <div class="flip-card-inner4">
+            <div class="flip-card-front4">
+              <img
+                src="https://cdn.glitch.global/98c9ecf5-68b0-4984-a92a-632e9a695059/IMG_4214.jpg?v=1748559530462"
+                alt="Avatar4"
+                style="width: 350px; height: 260px"
+              />
+            </div>
+            <div class="flip-card-back4">
+              <h1>Swan</h1>
+              <p>Medium: Ceramic</p>
+              <p>Year: 2024</p>
+              <p>Size: 16 x 11 x 13</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="main5">
+        <div class="flip-card5">
+          <div class="flip-card-inner5">
+            <div class="flip-card-front5">
+              <img
+                src="https://cdn.glitch.global/98c9ecf5-68b0-4984-a92a-632e9a695059/IMG_4213.jpg?v=1748559522678"
+                alt="Avatar5"
+                style="width: 250px; height: 310px"
+              />
+            </div>
+            <div class="flip-card-back5">
+              <h1>Timo</h1>
+              <p>Medium: Tempera</p>
+              <p>Year: 2024</p>
+              <p>Size: 20 x 14</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="main6">
+        <div class="flip-card6">
+          <div class="flip-card-inner6">
+            <div class="flip-card-front6">
+              <img
+                src="https://cdn.glitch.global/98c9ecf5-68b0-4984-a92a-632e9a695059/IMG_4210.jpg?v=1748559515346"
+                alt="Avatar6"
+                style="width: 240px; height: 310px"
+              />
+            </div>
+            <div class="flip-card-back6">
+              <h1>Still Life</h1>
+              <p>Medium: Graphite</p>
+              <p>Year: 2022</p>
+              <p>Size: 12 x 8</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="main7">
+        <div class="flip-card7">
+          <div class="flip-card-inner7">
+            <div class="flip-card-front7">
+              <img
+                src="https://cdn.glitch.global/98c9ecf5-68b0-4984-a92a-632e9a695059/unnamed%20(10).jpg?v=1748482453914"
+                alt="Avatar7"
+                style="width: 340px; height: 240px"
+              />
+            </div>
+            <div class="flip-card-back7">
+              <h1>Lying Down Figure</h1>
+              <p>Medium: Graphite</p>
+              <p>Year: 2024</p>
+              <p>Size: 18 x 28</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="main8">
+        <div class="flip-card8">
+          <div class="flip-card-inner8">
+            <div class="flip-card-front8">
+              <img
+                src="https://cdn.glitch.global/98c9ecf5-68b0-4984-a92a-632e9a695059/IMG_4212.jpg?v=1748910300477"
+                alt="Avatar8"
+                style="width: 200px; height: 300px"
+              />
+            </div>
+            <div class="flip-card-back8">
+              <h1>Family Print</h1>
+              <p>Medium: Ink</p>
+              <p>Year: 2023</p>
+              <p>Size: 16 x 10</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="main9">
+        <div class="flip-card9">
+          <div class="flip-card-inner9">
+            <div class="flip-card-front9">
+              <img
+                src="https://cdn.glitch.global/98c9ecf5-68b0-4984-a92a-632e9a695059/unnamed%20(14).jpg?v=1748912597495"
+                alt="Avatar9"
+                style="width: 210px; height: 300px"
+              />
+            </div>
+            <div class="flip-card-back9">
+              <h1>Post Card</h1>
+              <p>Medium: Tempera</p>
+              <p>Year: 2023</p>
+              <p>Size: 12 x 9</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="main10">
+        <div class="flip-card10">
+          <div class="flip-card-inner10">
+            <div class="flip-card-front10">
+              <img
+                src="https://cdn.glitch.global/98c9ecf5-68b0-4984-a92a-632e9a695059/unnamed%20(15).jpg?v=1748998444512"
+                alt="Avatar10"
+                style="width: 220px; height: 300px"
+              />
+            </div>
+            <div class="flip-card-back10">
+              <h1>Statue Sketch</h1>
+              <p>Medium: Graphite</p>
+              <p>Year: 2025</p>
+              <p>Size: 13 x 9</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="main11">
+        <div class="flip-card11">
+          <div class="flip-card-inner11">
+            <div class="flip-card-front11">
+              <img
+                src="https://cdn.glitch.global/98c9ecf5-68b0-4984-a92a-632e9a695059/unnamed%20(16).jpg?v=1748998440936"
+                alt="Avatar11"
+                style="width: 250px; height: 300px"
+              />
+            </div>
+            <div class="flip-card-back11">
+              <h1>Statue Sketch</h1>
+              <p>Medium: Graphite</p>
+              <p>Year: 2025</p>
+              <p>Size: 13 x 9</p>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </body>
 </html>
